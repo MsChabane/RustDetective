@@ -45,7 +45,7 @@ export default function ImageDetectionPage() {
 		formData.append("image", selectedImage);
 		try {
 			const response = await fetch(
-				"https://mschabane-rustdetective.hf.space/predict",
+				process.env.API_URL,
 				{
 					method: "Post",
 					body: formData,
