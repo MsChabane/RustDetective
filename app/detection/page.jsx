@@ -142,7 +142,7 @@ export default function ImageDetectionPage() {
 					</Button>
 				</CardContent>
 			</Card>
-			{Result && (
+			{result && (
 				<Card className="max-w-2xl mx-auto mb-8 shadow-md">
 					<CardHeader>
 						<CardTitle>Result</CardTitle>
@@ -172,7 +172,7 @@ export default function ImageDetectionPage() {
 							</div>
 							<div className=" w-full h-96 relative rounded-md overflow-hidden border shadow-sm bg-muted/30">
 								<Image
-									src={result.uri ? Result.uri : previewUrl}
+									src={result.uri ? result.uri : previewUrl}
 									alt="Result of prediction"
 									fill
 									sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
